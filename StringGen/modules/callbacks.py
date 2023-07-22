@@ -12,7 +12,7 @@ from StringGen.modules.gen import gen_session
 async def cb_choose(_, cq: CallbackQuery):
     await cq.answer()
     query = cq.matches[0].group(1)
-    if query == "gensession":
+    if query == "melsession":
         return await cq.message.reply_text(
             text="<b>» Klik tombol untuk membuat String :</b>",
             reply_markup=gen_key,
